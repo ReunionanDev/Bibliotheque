@@ -27,13 +27,21 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            // Adherent ID loading
             HashSet<Adherent> liste = new HashSet<Adherent>();
             liste = AdherentDAO.Instance.GetAll();
             adherentBindingSource1.DataSource = liste;
             adherentComboBox.DisplayMember = "AdherentID";
             nomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Nom");
             prenomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Prenom");
+
+            // Exemplaire ID loading
+            HashSet<Exemplaire> listeExemplaire = new HashSet<Exemplaire>();
+            listeExemplaire = ExemplaireDAO.Instance.GetAll();
+            exemplairesBindingSource.DataSource = listeExemplaire;
+            idExemplaireComboBox.DisplayMember = "IdExemplaire";
+
+            
         }
 
         private void BtnValid_Click(object sender, EventArgs e)

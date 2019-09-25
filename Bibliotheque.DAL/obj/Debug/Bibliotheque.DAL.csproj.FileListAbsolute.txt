@@ -42,3 +42,14 @@ C:\Users\CDA\Desktop\BibliothequeNCouchesSQL\Bibliotheque.DAL\obj\Debug\Biblioth
 C:\Users\CDA\Desktop\BibliothequeNCouchesSQL\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.csproj.CopyComplete
 C:\Users\CDA\Desktop\BibliothequeNCouchesSQL\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.dll
 C:\Users\CDA\Desktop\BibliothequeNCouchesSQL\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\bin\Debug\Bibliotheque.DAL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\bin\Debug\Bibliotheque.DAL.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\bin\Debug\Bibliotheque.BOL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\bin\Debug\Bibliotheque.BOL.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.csprojAssemblyReference.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.Messages.resources
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.csproj.GenerateResource.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.csproj.CopyComplete
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.DAL\obj\Debug\Bibliotheque.DAL.pdb

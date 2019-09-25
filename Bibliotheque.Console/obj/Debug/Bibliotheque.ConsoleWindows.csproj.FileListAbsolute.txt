@@ -46,3 +46,15 @@ C:\Users\CDA\Desktop\BibliothequeNCouchesSQL\Bibliotheque.Console\obj\Debug\Bibl
 C:\Users\CDA\Desktop\BibliothequeNCouchesSQL\Bibliotheque.Console\obj\Debug\Bibliotheque.ConsoleWindows.csproj.CopyComplete
 C:\Users\CDA\Desktop\BibliothequeNCouchesSQL\Bibliotheque.Console\obj\Debug\Bibliotheque.ConsoleWindows.exe
 C:\Users\CDA\Desktop\BibliothequeNCouchesSQL\Bibliotheque.Console\obj\Debug\Bibliotheque.ConsoleWindows.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\bin\Debug\Bibliotheque.ConsoleWindows.exe.config
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\bin\Debug\Bibliotheque.ConsoleWindows.exe
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\bin\Debug\Bibliotheque.ConsoleWindows.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\bin\Debug\Bibliotheque.BOL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\bin\Debug\Bibliotheque.DAL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\bin\Debug\Bibliotheque.DAL.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\bin\Debug\Bibliotheque.BOL.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\obj\Debug\Bibliotheque.ConsoleWindows.csprojAssemblyReference.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\obj\Debug\Bibliotheque.ConsoleWindows.csproj.CoreCompileInputs.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\obj\Debug\Bibliotheque.ConsoleWindows.csproj.CopyComplete
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\obj\Debug\Bibliotheque.ConsoleWindows.exe
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\Bibliotheque.Console\obj\Debug\Bibliotheque.ConsoleWindows.pdb
