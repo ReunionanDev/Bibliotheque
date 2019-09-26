@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //this.adherentComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             HashSet<Adherent> liste = new HashSet<Adherent>();
             liste = AdherentDAO.Instance.GetAll();
             adherentBindingSource1.DataSource = liste;
@@ -35,12 +35,15 @@ namespace WindowsFormsApp1
             nomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Nom");
             prenomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Prenom");
 
+            //this.exemplaireComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             HashSet<Exemplaire> listeExemplaire = new HashSet<Exemplaire>();
             listeExemplaire = ExemplaireDAO.Instance.GetAll();
             exemplaireBindingSource1.DataSource = listeExemplaire;
             exemplaireComboBox.DisplayMember = "IdExemplaire";
             iSBNTextBox.DataBindings.Add("Text", exemplaireBindingSource1, "ISBN");
             empruntableCheckBox.DataBindings.Add("Checked", exemplaireBindingSource1, "Empruntable");
+            disponibleCheckBox.DataBindings.Add("Checked", exemplaireBindingSource1, "Disponible");
+            
         }
 
         private void BtnValid_Click(object sender, EventArgs e)
@@ -48,15 +51,32 @@ namespace WindowsFormsApp1
             Adherent adherent = new Adherent();
             adherent = AdherentDAO.Instance.GetByID(adherentComboBox.Text);
             HashSet<Pret> listePret = new HashSet<Pret>();
-            adherent.Prets.SymmetricExceptWith(PretDAO.Instance.GetListePretsEncoursByIdAdherent(adherent.AdherentID));
-            listePret = adherent.Prets;
-            pretBindingSource.DataSource = listePret;
+            try
+            {
+                adherent.Prets.SymmetricExceptWith(PretDAO.Instance.GetListePretsEncoursByIdAdherent(adherent.AdherentID));
+                listePret = adherent.Prets;
+                pretBindingSource.DataSource = listePret;
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Veuillez choisir un adherent existant", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
         private void BtnPret_Click(object sender, EventArgs e)
         {
-
+            Pret pret = new Pret
+            {
+                AdherentID = adherentComboBox.Text,
+                IdExemplaire = int.Parse(exemplaireComboBox.Text),
+                DateEmprunt = DateTime.Today
+            };
+            if(MessageBox.Show("Voulez vous ajouter un prêt à l'adhérent " + adherentComboBox.Text + "?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                PretDAO.Instance.Create(pret);
+            }
         }
+        
     }
 }

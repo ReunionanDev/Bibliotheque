@@ -47,6 +47,30 @@ namespace Bibliotheque.DAL
             }
         }
 
+        public HashSet<Livre> GetAll()
+        {
+
+            using (SqlConnection cnx = DB.Instance.GetDBConnection())
+            using (SqlCommand command = cnx.CreateCommand())
+            {
+                command.CommandType = CommandType.Text;
+                command.CommandText = "Select ISBN, Titre FROM dbo.Livre";
+                return AlimenterListe(command);
+            }
+
+        }
+        private HashSet<Livre> AlimenterListe(SqlCommand command)
+        {
+            HashSet<Livre> livre = new HashSet<Livre>();
+            using (SqlDataReader rd = command.ExecuteReader())
+            {
+                while (rd.Read())
+                {
+                    livre.Add(ChargerDonnees(rd));
+                }
+            }
+            return livre;
+        }
         private Livre ChargerDonnees(SqlDataReader rd)
         {
             Livre livre = new Livre

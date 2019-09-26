@@ -16,3 +16,9 @@ C:\01 CDA\M1 - Dév Interface App Info\06 Accès aux données Partie 1\Correctio
 C:\01 CDA\M1 - Dév Interface App Info\06 Accès aux données Partie 1\Corrections\A004B\BibliothequeNCouchesSQL\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csproj.CoreCompileInputs.cache
 C:\01 CDA\M1 - Dév Interface App Info\06 Accès aux données Partie 1\Corrections\A004B\BibliothequeNCouchesSQL\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.dll
 C:\01 CDA\M1 - Dév Interface App Info\06 Accès aux données Partie 1\Corrections\A004B\BibliothequeNCouchesSQL\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.pdb
+C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\bin\Debug\Bibliotheque.BOL.dll
+C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\bin\Debug\Bibliotheque.BOL.pdb
+C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csprojAssemblyReference.cache
+C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csproj.CoreCompileInputs.cache
+C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.dll
+C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.pdb

@@ -55,6 +55,7 @@
             this.iSBNTextBox = new System.Windows.Forms.TextBox();
             this.exemplaireBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.exemplaireComboBox = new System.Windows.Forms.ComboBox();
+            this.exemplairesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             prenomLabel1 = new System.Windows.Forms.Label();
             nomLabel1 = new System.Windows.Forms.Label();
             adherentIDLabel1 = new System.Windows.Forms.Label();
@@ -66,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pretDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adherentBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exemplaireBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exemplairesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // prenomLabel1
@@ -94,6 +96,42 @@
             adherentIDLabel1.Size = new System.Drawing.Size(67, 13);
             adherentIDLabel1.TabIndex = 6;
             adherentIDLabel1.Text = "Adherent ID:";
+            // 
+            // disponibleLabel
+            // 
+            disponibleLabel.AutoSize = true;
+            disponibleLabel.Location = new System.Drawing.Point(23, 391);
+            disponibleLabel.Name = "disponibleLabel";
+            disponibleLabel.Size = new System.Drawing.Size(59, 13);
+            disponibleLabel.TabIndex = 13;
+            disponibleLabel.Text = "Disponible:";
+            // 
+            // empruntableLabel
+            // 
+            empruntableLabel.AutoSize = true;
+            empruntableLabel.Location = new System.Drawing.Point(23, 421);
+            empruntableLabel.Name = "empruntableLabel";
+            empruntableLabel.Size = new System.Drawing.Size(69, 13);
+            empruntableLabel.TabIndex = 15;
+            empruntableLabel.Text = "Empruntable:";
+            // 
+            // iSBNLabel
+            // 
+            iSBNLabel.AutoSize = true;
+            iSBNLabel.Location = new System.Drawing.Point(23, 454);
+            iSBNLabel.Name = "iSBNLabel";
+            iSBNLabel.Size = new System.Drawing.Size(35, 13);
+            iSBNLabel.TabIndex = 19;
+            iSBNLabel.Text = "ISBN:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(23, 362);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(73, 13);
+            label1.TabIndex = 21;
+            label1.Text = "Id Exemplaire:";
             // 
             // pretBindingSource
             // 
@@ -184,6 +222,9 @@
             // 
             // adherentComboBox
             // 
+            this.adherentComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.adherentComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.adherentComboBox.BackColor = System.Drawing.SystemColors.Window;
             this.adherentComboBox.DataSource = this.adherentBindingSource1;
             this.adherentComboBox.DisplayMember = "Nom";
             this.adherentComboBox.FormattingEnabled = true;
@@ -203,15 +244,6 @@
             this.btnPret.UseVisualStyleBackColor = true;
             this.btnPret.Click += new System.EventHandler(this.BtnPret_Click);
             // 
-            // disponibleLabel
-            // 
-            disponibleLabel.AutoSize = true;
-            disponibleLabel.Location = new System.Drawing.Point(23, 391);
-            disponibleLabel.Name = "disponibleLabel";
-            disponibleLabel.Size = new System.Drawing.Size(59, 13);
-            disponibleLabel.TabIndex = 13;
-            disponibleLabel.Text = "Disponible:";
-            // 
             // disponibleCheckBox
             // 
             this.disponibleCheckBox.Enabled = false;
@@ -221,15 +253,6 @@
             this.disponibleCheckBox.TabIndex = 14;
             this.disponibleCheckBox.UseVisualStyleBackColor = true;
             // 
-            // empruntableLabel
-            // 
-            empruntableLabel.AutoSize = true;
-            empruntableLabel.Location = new System.Drawing.Point(23, 421);
-            empruntableLabel.Name = "empruntableLabel";
-            empruntableLabel.Size = new System.Drawing.Size(69, 13);
-            empruntableLabel.TabIndex = 15;
-            empruntableLabel.Text = "Empruntable:";
-            // 
             // empruntableCheckBox
             // 
             this.empruntableCheckBox.Enabled = false;
@@ -238,15 +261,6 @@
             this.empruntableCheckBox.Size = new System.Drawing.Size(121, 24);
             this.empruntableCheckBox.TabIndex = 16;
             this.empruntableCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // iSBNLabel
-            // 
-            iSBNLabel.AutoSize = true;
-            iSBNLabel.Location = new System.Drawing.Point(23, 454);
-            iSBNLabel.Name = "iSBNLabel";
-            iSBNLabel.Size = new System.Drawing.Size(35, 13);
-            iSBNLabel.TabIndex = 19;
-            iSBNLabel.Text = "ISBN:";
             // 
             // iSBNTextBox
             // 
@@ -262,6 +276,8 @@
             // 
             // exemplaireComboBox
             // 
+            this.exemplaireComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.exemplaireComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.exemplaireComboBox.DataSource = this.exemplaireBindingSource1;
             this.exemplaireComboBox.DisplayMember = "ISBN";
             this.exemplaireComboBox.FormattingEnabled = true;
@@ -271,20 +287,11 @@
             this.exemplaireComboBox.TabIndex = 20;
             this.exemplaireComboBox.ValueMember = "Disponible";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(23, 362);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(73, 13);
-            label1.TabIndex = 21;
-            label1.Text = "Id Exemplaire:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 612);
+            this.ClientSize = new System.Drawing.Size(808, 633);
             this.Controls.Add(label1);
             this.Controls.Add(this.exemplaireComboBox);
             this.Controls.Add(disponibleLabel);
@@ -309,6 +316,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pretDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adherentBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exemplaireBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exemplairesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,6 +342,7 @@
         private System.Windows.Forms.TextBox iSBNTextBox;
         private System.Windows.Forms.BindingSource exemplaireBindingSource1;
         private System.Windows.Forms.ComboBox exemplaireComboBox;
+        private System.Windows.Forms.BindingSource exemplairesBindingSource;
     }
 }
 

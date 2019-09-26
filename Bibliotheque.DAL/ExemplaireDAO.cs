@@ -74,10 +74,30 @@ namespace Bibliotheque.DAL
             {
                 IdExemplaire = (int)rd["IdExemplaire"],
                 ISBN = rd["ISBN"].ToString(),
-                Empruntable = (bool)rd["Empruntable"]
-                 
+                Empruntable = (bool)rd["Empruntable"],
+                Disponible = ExemplaireDAO.Instance.Avalaible((int)rd["IdExemplaire"])
             };
             return exemplaire;
         }
+        public bool Avalaible(int idExemplaire)
+        {
+            using (SqlConnection cnx = DB.Instance.GetDBConnection())
+            using (SqlCommand command = cnx.CreateCommand())
+            {
+                command.CommandType = CommandType.Text;
+                SqlParameter pidExemplaire = command.CreateParameter();
+                pidExemplaire.ParameterName = "@idExemplaire";
+                pidExemplaire.DbType = DbType.Int32;
+                pidExemplaire.Direction = ParameterDirection.Input;
+                pidExemplaire.Value = idExemplaire;
+                command.Parameters.Add(pidExemplaire);
+                command.CommandText = "Select COUNT(IdExemplaire) FROM dbo.Pret where IdExemplaire = @idExemplaire AND DateRetour IS NULL";
+                int result = (int)command.ExecuteScalar();
+
+                if (result == 0) return true;
+            }
+            return false;
+        }
+        
     }
 }

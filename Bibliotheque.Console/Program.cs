@@ -14,8 +14,9 @@ namespace Bibliotheque.ConsoleWindows
         {
             // Initialiser Paramètres DB Connexion
             DB.DbConnectionString = Properties.Settings.Default.BibliothequeConnectString;
-            TesterAdherent();
-           
+            //TesterAdherent();
+            Console.WriteLine(ExemplaireDAO.Instance.Avalaible(6));
+            Console.Read();
             
         }
 
