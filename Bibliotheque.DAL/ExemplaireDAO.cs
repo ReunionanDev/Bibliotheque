@@ -25,6 +25,7 @@ namespace Bibliotheque.DAL
                 return _instance;
             }
         }
+
         public Exemplaire GetByID(int idExemplaire)
         {
             using (SqlConnection cnx = DB.Instance.GetDBConnection())
@@ -43,6 +44,29 @@ namespace Bibliotheque.DAL
                     return rd.Read() ? ChargerDonnees(rd) : null;
                 }
             }
+        }
+        public HashSet<Exemplaire> GetAll()
+        {
+            using (SqlConnection cnx = DB.Instance.GetDBConnection())
+            using (SqlCommand command = cnx.CreateCommand())
+            {
+                command.CommandType = CommandType.Text;
+                command.CommandText = "Select IdExemplaire,ISBN,Empruntable FROM dbo.Exemplaire";
+                return AlimenterListe(command);
+            }
+
+        }
+        private HashSet<Exemplaire> AlimenterListe(SqlCommand command)
+        {
+            HashSet<Exemplaire> exemplaire = new HashSet<Exemplaire>();
+            using (SqlDataReader rd = command.ExecuteReader())
+            {
+                while (rd.Read())
+                {
+                    exemplaire.Add(ChargerDonnees(rd));
+                }
+            }
+            return exemplaire;
         }
         private Exemplaire ChargerDonnees(SqlDataReader rd)
         {

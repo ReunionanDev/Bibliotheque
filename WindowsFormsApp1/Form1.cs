@@ -34,6 +34,13 @@ namespace WindowsFormsApp1
             adherentComboBox.DisplayMember = "AdherentID";
             nomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Nom");
             prenomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Prenom");
+
+            HashSet<Exemplaire> listeExemplaire = new HashSet<Exemplaire>();
+            listeExemplaire = ExemplaireDAO.Instance.GetAll();
+            exemplaireBindingSource1.DataSource = listeExemplaire;
+            exemplaireComboBox.DisplayMember = "IdExemplaire";
+            iSBNTextBox.DataBindings.Add("Text", exemplaireBindingSource1, "ISBN");
+            empruntableCheckBox.DataBindings.Add("Checked", exemplaireBindingSource1, "Empruntable");
         }
 
         private void BtnValid_Click(object sender, EventArgs e)

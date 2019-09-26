@@ -25,6 +25,7 @@ namespace Bibliotheque.DAL
                 return _instance;
             }
         }
+
         public Livre GetByISBN(string ISBN)
         {
             using (SqlConnection cnx = DB.Instance.GetDBConnection())
@@ -45,6 +46,7 @@ namespace Bibliotheque.DAL
                 }
             }
         }
+
         private Livre ChargerDonnees(SqlDataReader rd)
         {
             Livre livre = new Livre

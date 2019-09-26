@@ -14,7 +14,7 @@ namespace Bibliotheque.ConsoleWindows
         {
             // Initialiser Paramètres DB Connexion
             DB.DbConnectionString = Properties.Settings.Default.BibliothequeConnectString;
-            TesterPret();
+            TesterAdherent();
            
             
         }
@@ -24,9 +24,9 @@ namespace Bibliotheque.ConsoleWindows
         private static void TesterAdherent()
         {
             // Liste 
-            foreach (Adherent item in AdherentDAO.Instance.GetAll())
+            foreach (Exemplaire item in ExemplaireDAO.Instance.GetAll())
             {
-                Console.WriteLine($"ID : {item.AdherentID} Prénom : {item.Prenom} Nom : {item.Nom}");
+                Console.WriteLine($"ID : {item.IdExemplaire} Prénom : {item.Empruntable} Nom : {item.ISBN}");
             }
            
 
