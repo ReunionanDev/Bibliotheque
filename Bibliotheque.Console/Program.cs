@@ -14,8 +14,8 @@ namespace Bibliotheque.ConsoleWindows
         {
             // Initialiser Paramètres DB Connexion
             DB.DbConnectionString = Properties.Settings.Default.BibliothequeConnectString;
-            //TesterAdherent();
-            Console.WriteLine(ExemplaireDAO.Instance.Avalaible(6));
+            TesterPret();
+            //Console.WriteLine(ExemplaireDAO.Instance.Avalaible(6));
             Console.Read();
             
         }
@@ -94,7 +94,7 @@ namespace Bibliotheque.ConsoleWindows
                 Console.WriteLine($"Emprunté {(PretDAO.Instance.GetEnCoursByIDExemplaire(item.IdExemplaire)==null ? "Oui" : "Non")}");
             }
             Console.WriteLine($"Nombre prets pour {adh.Nom} : {adh.Prets.Count}");
-            Console.WriteLine($"Déja Emprunté {(PretDAO.Instance.GetEnCoursByIDExemplaire(3) == null ? "Oui" : "Non")}");
+            Console.WriteLine($"Déja Emprunté {(PretDAO.Instance.GetEnCoursByIDExemplaire(1) == null ? "Oui" : "Non")}");
 
             Exemplaire exemplaire = ExemplaireDAO.Instance.GetByID(6);
             exemplaire.Disponible = PretDAO.Instance.GetEnCoursByIDExemplaire(exemplaire.IdExemplaire) == null;

@@ -72,7 +72,7 @@ namespace WindowsFormsApp1
                 IdExemplaire = int.Parse(exemplaireComboBox.Text),
                 DateEmprunt = DateTime.Today
             };
-            if(MessageBox.Show("Voulez vous ajouter un prêt à l'adhérent " + adherentComboBox.Text + "?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if(MessageBox.Show($"Voulez vous affecter l'exemplaire n°{exemplaireComboBox.Text} à l'adhérent {adherentComboBox.Text}?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 PretDAO.Instance.Create(pret);
             }
