@@ -75,7 +75,7 @@ namespace Bibliotheque.DAL
                 IdExemplaire = (int)rd["IdExemplaire"],
                 ISBN = rd["ISBN"].ToString(),
                 Empruntable = (bool)rd["Empruntable"],
-                Disponible = ExemplaireDAO.Instance.Avalaible((int)rd["IdExemplaire"])
+                Disponible = PretDAO.Instance.GetEnCoursByIDExemplaire((int)rd["IdExemplaire"]) == null                                  //   ExemplaireDAO.Instance.Avalaible((int)rd["IdExemplaire"])
             };
             return exemplaire;
         }

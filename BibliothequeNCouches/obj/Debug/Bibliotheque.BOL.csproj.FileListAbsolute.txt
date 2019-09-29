@@ -22,3 +22,8 @@ C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheq
 C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csproj.CoreCompileInputs.cache
 C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.dll
 C:\Users\CDA\source\repos\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.pdb
+C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\bin\Debug\Bibliotheque.BOL.dll
+C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\bin\Debug\Bibliotheque.BOL.pdb
+C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csproj.CoreCompileInputs.cache
+C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.dll
+C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.pdb

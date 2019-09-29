@@ -33,8 +33,8 @@ namespace Bibliotheque.ConsoleWindows
 
             // Extraction 1 Adherent
 
-            Adherent adherent = AdherentDAO.Instance.GetByID("A9087");
-            Console.WriteLine($"ID : {adherent.AdherentID} Prénom : {adherent.Prenom} Nom : {adherent.Nom}");
+            Adherent adherent = AdherentDAO.Instance.GetByID("A001");
+            Console.WriteLine($"ID : {adherent.AdherentID} Prénom : {adherent.Prenom} Nom : {adherent.Nom} Pret : {adherent.Prets.Count}");
 
             // Modification 1 Adherent
 
@@ -96,7 +96,7 @@ namespace Bibliotheque.ConsoleWindows
             Console.WriteLine($"Nombre prets pour {adh.Nom} : {adh.Prets.Count}");
             Console.WriteLine($"Déja Emprunté {(PretDAO.Instance.GetEnCoursByIDExemplaire(1) == null ? "Oui" : "Non")}");
 
-            Exemplaire exemplaire = ExemplaireDAO.Instance.GetByID(6);
+            Exemplaire exemplaire = ExemplaireDAO.Instance.GetByID(3);
             exemplaire.Disponible = PretDAO.Instance.GetEnCoursByIDExemplaire(exemplaire.IdExemplaire) == null;
 
             Console.WriteLine($"exemplaire : {exemplaire.IdExemplaire}" +
