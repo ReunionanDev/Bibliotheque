@@ -1,0 +1,17 @@
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\Liste d'objets.deps.json
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\Liste d'objets.runtimeconfig.json
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\Liste d'objets.runtimeconfig.dev.json
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\Liste d'objets.dll
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\Liste d'objets.pdb
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\SalariesDll.dll
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\SalariesDll.pdb
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\obj\Debug\netcoreapp2.1\Liste d'objets.csprojAssemblyReference.cache
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\obj\Debug\netcoreapp2.1\Liste d'objets.csproj.CoreCompileInputs.cache
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\obj\Debug\netcoreapp2.1\Liste d'objets.AssemblyInfoInputs.cache
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\obj\Debug\netcoreapp2.1\Liste d'objets.AssemblyInfo.cs
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\obj\Debug\netcoreapp2.1\Liste d'objets.csproj.CopyComplete
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\obj\Debug\netcoreapp2.1\Liste d'objets.dll
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\obj\Debug\netcoreapp2.1\Liste d'objets.pdb
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\SalariesDll.xml
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\Utilities.dll
+C:\Users\CDA\source\repos\SalariesDll\Liste d'objets\bin\Debug\netcoreapp2.1\Utilities.pdb

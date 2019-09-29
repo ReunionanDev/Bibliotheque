@@ -1,0 +1,170 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Liste d'objets\\Liste d'objets.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Liste d'objets\\Liste d'objets.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Liste d'objets\\Liste d'objets.csproj",
+        "projectName": "Liste d'objets",
+        "projectPath": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Liste d'objets\\Liste d'objets.csproj",
+        "packagesPath": "C:\\Users\\Gael RB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Liste d'objets\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gael RB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\SalariesDll\\SalariesDll.csproj": {
+                "projectPath": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\SalariesDll\\SalariesDll.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\SalariesDll\\SalariesDll.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\SalariesDll\\SalariesDll.csproj",
+        "projectName": "SalariesDll",
+        "projectPath": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\SalariesDll\\SalariesDll.csproj",
+        "packagesPath": "C:\\Users\\Gael RB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\SalariesDll\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gael RB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Utilities\\Utilities.csproj": {
+                "projectPath": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Utilities\\Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Utilities\\Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Utilities\\Utilities.csproj",
+        "projectName": "Utilities",
+        "projectPath": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Utilities\\Utilities.csproj",
+        "packagesPath": "C:\\Users\\Gael RB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gael RB\\Desktop\\SalariesDll-master\\Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gael RB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

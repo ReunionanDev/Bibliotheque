@@ -1,0 +1,28 @@
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.deps.json
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.runtimeconfig.json
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.runtimeconfig.dev.json
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.dll
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.pdb
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.csprojAssemblyReference.cache
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.csproj.CoreCompileInputs.cache
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.AssemblyInfoInputs.cache
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.AssemblyInfo.cs
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.dll
+C:\Users\Gael RB\Documents\Code C#\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.pdb
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.deps.json
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.runtimeconfig.json
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.runtimeconfig.dev.json
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.dll
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.pdb
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.csproj.CoreCompileInputs.cache
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.AssemblyInfoInputs.cache
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.AssemblyInfo.cs
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.dll
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.pdb
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\SalariesDll.xml
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.csprojAssemblyReference.cache
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.csproj.GenerateResource.cache
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.ErrorCode.resources
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\Utilities.dll
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\bin\Debug\netcoreapp2.1\Utilities.pdb
+C:\Users\CDA\source\repos\SalariesDll\SalariesDll\obj\Debug\netcoreapp2.1\SalariesDll.csproj.CopyComplete
