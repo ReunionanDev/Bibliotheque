@@ -14,7 +14,8 @@ namespace GestionPretForm
 {
     public partial class FormAdherent : Form
     {
-        Adherent adherent;
+        private HashSet<Adherent> adherents = new HashSet<Adherent>();
+        private Adherent adherent;
 
         public FormAdherent()
         {
@@ -24,13 +25,11 @@ namespace GestionPretForm
 
         private void FormAdherent_Load(object sender, EventArgs e)
         {
-            HashSet<Adherent> liste = new HashSet<Adherent>();
-            liste = AdherentDAO.Instance.GetAll();
-            adherentBindingSource.DataSource = liste;
+            adherents = AdherentDAO.Instance.GetAll();
+            adherentBindingSource.DataSource = adherents;
 
             AutoComplete();
         }
-
 
         private void BtnCreerAdherent_Click(object sender, EventArgs e)
         {
@@ -58,9 +57,7 @@ namespace GestionPretForm
             adherent.Prenom = prenomTextBox.Text;
 
             //Checking if the Adherent is not already in the list
-            HashSet<Adherent> liste = new HashSet<Adherent>();
-            liste = AdherentDAO.Instance.GetAll();
-            foreach (Adherent item in liste)
+            foreach (Adherent item in adherents)
             {
                 if (adherent.Equals(item))
                 {
@@ -85,14 +82,11 @@ namespace GestionPretForm
         private void AutoComplete()
         {
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
-            HashSet<Adherent> liste = new HashSet<Adherent>();
-            liste = AdherentDAO.Instance.GetAll();
-            foreach(Adherent item in liste)
+            foreach(Adherent item in adherents)
             {
                 collection.Add(item.AdherentID);
             }
             adherentIDTextBox.AutoCompleteCustomSource = collection;
-            
         }
     }
 }
