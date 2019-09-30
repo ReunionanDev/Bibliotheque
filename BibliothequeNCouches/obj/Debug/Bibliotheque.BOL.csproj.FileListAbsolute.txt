@@ -27,3 +27,4 @@ C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\bin\Debug\Bibl
 C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csproj.CoreCompileInputs.cache
 C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.dll
 C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.pdb
+C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csprojAssemblyReference.cache

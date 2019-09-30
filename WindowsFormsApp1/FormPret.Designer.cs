@@ -288,9 +288,8 @@
             this.exemplaireComboBox.Size = new System.Drawing.Size(127, 21);
             this.exemplaireComboBox.TabIndex = 20;
             this.exemplaireComboBox.ValueMember = "Disponible";
-
             // 
-            // Form1
+            // FormPret
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -312,7 +311,7 @@
             this.Controls.Add(this.nomTextBox1);
             this.Controls.Add(prenomLabel1);
             this.Controls.Add(this.prenomTextBox1);
-            this.Name = "Form1";
+            this.Name = "FormPret";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pretBindingSource)).EndInit();

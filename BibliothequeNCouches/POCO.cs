@@ -35,7 +35,7 @@ namespace Bibliotheque.BOL
         public bool Equals(Adherent obj)
         {
             if (obj == null) return false;
-            return (obj.AdherentID == this.AdherentID);
+            return (obj.AdherentID.Replace(" ", "") == this.AdherentID.Replace(" ", ""));
         }
         /// <summary>
         /// opérateur relationnel ==
@@ -72,6 +72,8 @@ namespace Bibliotheque.BOL
     {
         public string ISBN { get; set; }
         public string Titre { get; set; }
+        public int IdCategorie { get; set; }
+        public Categorie Categorie { get; set; }
         public HashSet<Exemplaire> Exemplaires { get; } = new HashSet<Exemplaire>();
         /// <summary>
         /// Compare deux instances pour déterminer l'égalité
@@ -126,6 +128,14 @@ namespace Bibliotheque.BOL
             return (ISBN != null) ? ISBN.GetHashCode() : 0;
         }
     }
+
+    public class Categorie
+    {
+        public HashSet<Livre> Livres { get; } = new HashSet<Livre>();
+        public int Id { get; set; }
+        public string Libelle { get; set; }
+    }
+
     public class Exemplaire : INotifyPropertyChanged
     {
         private bool disponible;
