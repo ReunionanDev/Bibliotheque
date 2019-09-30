@@ -23,6 +23,19 @@ namespace GestionPretForm
             DB.DbConnectionString = Properties.Settings.Default.BibliothequeConnectString;
         }
 
+        private Adherent FindAdherent(string search)
+        {
+            foreach (Adherent item in adherents)
+            {
+                if (item.AdherentID.Contains(search))
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
+
         private void FormAdherent_Load(object sender, EventArgs e)
         {
             adherents = AdherentDAO.Instance.GetAll();
