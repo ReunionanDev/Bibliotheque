@@ -119,7 +119,7 @@ namespace GestionPretForm
             nomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Nom");
             prenomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Prenom");
 
-            ///Load Datas of Exemplaire object
+            //Load Datas of Exemplaire object
             HashSet<Exemplaire> listeExemplaire = new HashSet<Exemplaire>();
             listeExemplaire = ExemplaireDAO.Instance.GetAll();
             exemplaireBindingSource1.DataSource = listeExemplaire;

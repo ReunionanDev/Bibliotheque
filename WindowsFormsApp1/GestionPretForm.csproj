@@ -61,16 +61,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAdherent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdherent.Designer.cs">
+      <DependentUpon>FormAdherent.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPret.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPret.Designer.cs">
       <DependentUpon>FormPret.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdherent.resx">
+      <DependentUpon>FormAdherent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPret.resx">
       <DependentUpon>FormPret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

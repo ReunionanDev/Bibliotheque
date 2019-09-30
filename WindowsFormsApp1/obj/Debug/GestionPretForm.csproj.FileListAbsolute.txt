@@ -16,3 +16,23 @@ C:\Users\Gael RB\Desktop\Bibliotheque-master\WindowsFormsApp1\bin\Debug\GestionP
 C:\Users\Gael RB\Desktop\Bibliotheque-master\WindowsFormsApp1\bin\Debug\GestionPretForm.pdb
 C:\Users\Gael RB\Desktop\Bibliotheque-master\WindowsFormsApp1\obj\Debug\GestionPretForm.exe
 C:\Users\Gael RB\Desktop\Bibliotheque-master\WindowsFormsApp1\obj\Debug\GestionPretForm.pdb
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\GestionPretForm.exe.config
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\GestionPretForm.exe
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\GestionPretForm.pdb
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.BOL.dll
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.ConsoleWindows.exe
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.DAL.dll
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.ConsoleWindows.pdb
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.ConsoleWindows.exe.config
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.DAL.pdb
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.BOL.pdb
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.csprojAssemblyReference.cache
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormPret.resources
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.Properties.Resources.resources
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.csproj.GenerateResource.cache
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.csproj.CoreCompileInputs.cache
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.csproj.CopyComplete
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.exe
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.pdb
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.MainWindow.resources
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormAdherent.resources
