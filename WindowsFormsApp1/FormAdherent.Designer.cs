@@ -33,22 +33,25 @@
             System.Windows.Forms.Label nomLabel;
             System.Windows.Forms.Label prenomLabel;
             this.adherentIDTextBox = new System.Windows.Forms.TextBox();
+            this.adherentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nomTextBox = new System.Windows.Forms.TextBox();
             this.prenomTextBox = new System.Windows.Forms.TextBox();
             this.adherentDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCreerAdherent = new System.Windows.Forms.Button();
             this.btnValider = new System.Windows.Forms.Button();
             this.btnModifyAdherent = new System.Windows.Forms.Button();
             this.btnValidateModify = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adherentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnSupprimer = new System.Windows.Forms.Button();
             adherentIDLabel = new System.Windows.Forms.Label();
             nomLabel = new System.Windows.Forms.Label();
             prenomLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.adherentDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adherentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adherentDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
             // 
             // adherentIDLabel
@@ -87,6 +90,11 @@
             this.adherentIDTextBox.Name = "adherentIDTextBox";
             this.adherentIDTextBox.Size = new System.Drawing.Size(100, 20);
             this.adherentIDTextBox.TabIndex = 3;
+            this.adherentIDTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AdherentIDTextBox_KeyDown);
+            // 
+            // adherentBindingSource
+            // 
+            this.adherentBindingSource.DataSource = typeof(Bibliotheque.BOL.Adherent);
             // 
             // nomTextBox
             // 
@@ -122,6 +130,27 @@
             this.adherentDataGridView.Size = new System.Drawing.Size(548, 220);
             this.adherentDataGridView.TabIndex = 7;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "AdherentID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "AdherentID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nom";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Prenom";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Prenom";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
             // btnCreerAdherent
             // 
             this.btnCreerAdherent.Location = new System.Drawing.Point(261, 42);
@@ -156,43 +185,34 @@
             // btnValidateModify
             // 
             this.btnValidateModify.Enabled = false;
-            this.btnValidateModify.Location = new System.Drawing.Point(441, 100);
+            this.btnValidateModify.Location = new System.Drawing.Point(441, 97);
             this.btnValidateModify.Name = "btnValidateModify";
             this.btnValidateModify.Size = new System.Drawing.Size(148, 23);
             this.btnValidateModify.TabIndex = 11;
             this.btnValidateModify.Text = "Valider modifications";
             this.btnValidateModify.UseVisualStyleBackColor = true;
+            this.btnValidateModify.Click += new System.EventHandler(this.BtnValidateModify_Click);
             // 
-            // dataGridViewTextBoxColumn1
+            // error
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "AdherentID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "AdherentID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.error.ContainerControl = this;
             // 
-            // dataGridViewTextBoxColumn2
+            // btnSupprimer
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nom";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nom";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Prenom";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Prenom";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // adherentBindingSource
-            // 
-            this.adherentBindingSource.DataSource = typeof(Bibliotheque.BOL.Adherent);
+            this.btnSupprimer.Location = new System.Drawing.Point(622, 43);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(156, 23);
+            this.btnSupprimer.TabIndex = 12;
+            this.btnSupprimer.Text = "Supprimer adhérent";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
             // 
             // FormAdherent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 520);
+            this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnValidateModify);
             this.Controls.Add(this.btnModifyAdherent);
             this.Controls.Add(this.btnValider);
@@ -207,8 +227,9 @@
             this.Name = "FormAdherent";
             this.Text = "FormAdherent";
             this.Load += new System.EventHandler(this.FormAdherent_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.adherentDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adherentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adherentDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +249,7 @@
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Button btnModifyAdherent;
         private System.Windows.Forms.Button btnValidateModify;
+        private System.Windows.Forms.ErrorProvider error;
+        private System.Windows.Forms.Button btnSupprimer;
     }
 }
