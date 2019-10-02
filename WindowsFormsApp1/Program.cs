@@ -16,7 +16,7 @@ namespace GestionPretForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAdherent());
+            Application.Run(new FormPret());
         }
     }
 }

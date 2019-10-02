@@ -155,6 +155,7 @@ namespace GestionPretForm
             } 
         }
 
+        //Delete and adherent who have no Loan 
         private void BtnSupprimer_Click(object sender, EventArgs e)
         {
             adherent = FindAdherent(adherentIDTextBox.Text);

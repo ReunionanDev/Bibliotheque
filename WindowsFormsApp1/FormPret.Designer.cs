@@ -36,14 +36,6 @@
             System.Windows.Forms.Label empruntableLabel;
             System.Windows.Forms.Label iSBNLabel;
             System.Windows.Forms.Label label1;
-            this.pretBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pretDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenomTextBox1 = new System.Windows.Forms.TextBox();
             this.nomTextBox1 = new System.Windows.Forms.TextBox();
             this.btnValid = new System.Windows.Forms.Button();
@@ -55,7 +47,15 @@
             this.iSBNTextBox = new System.Windows.Forms.TextBox();
             this.exemplaireBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.exemplaireComboBox = new System.Windows.Forms.ComboBox();
-            this.exemplairesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnRetour = new System.Windows.Forms.Button();
+            this.pretBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pretDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             prenomLabel1 = new System.Windows.Forms.Label();
             nomLabel1 = new System.Windows.Forms.Label();
             adherentIDLabel1 = new System.Windows.Forms.Label();
@@ -63,11 +63,10 @@
             empruntableLabel = new System.Windows.Forms.Label();
             iSBNLabel = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pretBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pretDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adherentBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exemplaireBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exemplairesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pretBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pretDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // prenomLabel1
@@ -133,63 +132,6 @@
             label1.TabIndex = 21;
             label1.Text = "Id Exemplaire:";
             // 
-            // pretBindingSource
-            // 
-            this.pretBindingSource.DataSource = typeof(Bibliotheque.BOL.Pret);
-            // 
-            // pretDataGridView
-            // 
-            this.pretDataGridView.AutoGenerateColumns = false;
-            this.pretDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.pretDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.pretDataGridView.DataSource = this.pretBindingSource;
-            this.pretDataGridView.Location = new System.Drawing.Point(26, 107);
-            this.pretDataGridView.Name = "pretDataGridView";
-            this.pretDataGridView.Size = new System.Drawing.Size(628, 220);
-            this.pretDataGridView.TabIndex = 11;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "AdherentID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "AdherentID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Adherent";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Adherent";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "IdExemplaire";
-            this.dataGridViewTextBoxColumn3.HeaderText = "IdExemplaire";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Exemplaire";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Exemplaire";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "DateEmprunt";
-            this.dataGridViewTextBoxColumn5.HeaderText = "DateEmprunt";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "DateRetour";
-            this.dataGridViewTextBoxColumn6.HeaderText = "DateRetour";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
             // prenomTextBox1
             // 
             this.prenomTextBox1.Enabled = false;
@@ -216,10 +158,6 @@
             this.btnValid.UseVisualStyleBackColor = true;
             this.btnValid.Click += new System.EventHandler(this.BtnValid_Click);
             // 
-            // adherentBindingSource1
-            // 
-            this.adherentBindingSource1.DataSource = typeof(Bibliotheque.BOL.Adherent);
-            // 
             // adherentComboBox
             // 
             this.adherentComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -228,6 +166,7 @@
             this.adherentComboBox.DataSource = this.adherentBindingSource1;
             this.adherentComboBox.DisplayMember = "AdherentID";
             this.adherentComboBox.FormattingEnabled = true;
+            this.adherentComboBox.IntegralHeight = false;
             this.adherentComboBox.Location = new System.Drawing.Point(96, 9);
             this.adherentComboBox.Name = "adherentComboBox";
             this.adherentComboBox.Size = new System.Drawing.Size(300, 21);
@@ -272,10 +211,6 @@
             this.iSBNTextBox.Size = new System.Drawing.Size(121, 20);
             this.iSBNTextBox.TabIndex = 20;
             // 
-            // exemplaireBindingSource1
-            // 
-            this.exemplaireBindingSource1.DataSource = typeof(Bibliotheque.BOL.Exemplaire);
-            // 
             // exemplaireComboBox
             // 
             this.exemplaireComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -288,12 +223,83 @@
             this.exemplaireComboBox.Size = new System.Drawing.Size(127, 21);
             this.exemplaireComboBox.TabIndex = 20;
             this.exemplaireComboBox.ValueMember = "Disponible";
+            this.exemplaireComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ExemplaireComboBox_KeyDown);
+            // 
+            // btnRetour
+            // 
+            this.btnRetour.Location = new System.Drawing.Point(454, 69);
+            this.btnRetour.Name = "btnRetour";
+            this.btnRetour.Size = new System.Drawing.Size(130, 23);
+            this.btnRetour.TabIndex = 22;
+            this.btnRetour.Text = "Enregistrer retour";
+            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.BtnRetour_Click);
+            // 
+            // pretBindingSource1
+            // 
+            this.pretBindingSource1.DataSource = typeof(Bibliotheque.BOL.Pret);
+            // 
+            // pretDataGridView
+            // 
+            this.pretDataGridView.AutoGenerateColumns = false;
+            this.pretDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pretDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
+            this.pretDataGridView.DataSource = this.pretBindingSource1;
+            this.pretDataGridView.Location = new System.Drawing.Point(26, 114);
+            this.pretDataGridView.Name = "pretDataGridView";
+            this.pretDataGridView.Size = new System.Drawing.Size(676, 220);
+            this.pretDataGridView.TabIndex = 22;
+            this.pretDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PretDataGridView_CellClick_1);
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "AdherentID";
+            this.dataGridViewTextBoxColumn7.HeaderText = "AdherentID";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Adherent";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Adherent";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "IdExemplaire";
+            this.dataGridViewTextBoxColumn9.HeaderText = "IdExemplaire";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Exemplaire";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Exemplaire";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "DateEmprunt";
+            this.dataGridViewTextBoxColumn11.HeaderText = "DateEmprunt";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "DateRetour";
+            this.dataGridViewTextBoxColumn12.HeaderText = "DateRetour";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
             // FormPret
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 633);
+            this.Controls.Add(this.pretDataGridView);
+            this.Controls.Add(this.btnRetour);
             this.Controls.Add(label1);
             this.Controls.Add(this.exemplaireComboBox);
             this.Controls.Add(disponibleLabel);
@@ -305,7 +311,6 @@
             this.Controls.Add(this.btnPret);
             this.Controls.Add(this.adherentComboBox);
             this.Controls.Add(this.btnValid);
-            this.Controls.Add(this.pretDataGridView);
             this.Controls.Add(adherentIDLabel1);
             this.Controls.Add(nomLabel1);
             this.Controls.Add(this.nomTextBox1);
@@ -314,19 +319,16 @@
             this.Name = "FormPret";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pretBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pretDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adherentBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exemplaireBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exemplairesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pretBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pretDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource pretBindingSource;
-        private System.Windows.Forms.DataGridView pretDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -344,7 +346,15 @@
         private System.Windows.Forms.TextBox iSBNTextBox;
         private System.Windows.Forms.BindingSource exemplaireBindingSource1;
         private System.Windows.Forms.ComboBox exemplaireComboBox;
-        private System.Windows.Forms.BindingSource exemplairesBindingSource;
+        private System.Windows.Forms.Button btnRetour;
+        private System.Windows.Forms.BindingSource pretBindingSource1;
+        private System.Windows.Forms.DataGridView pretDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
     }
 }
 

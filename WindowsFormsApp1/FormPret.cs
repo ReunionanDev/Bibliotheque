@@ -16,7 +16,12 @@ namespace GestionPretForm
 {
     public partial class FormPret : Form
     {
-        
+        //Adherent adherent;
+        Exemplaire exemplaire;
+        HashSet<Exemplaire> listeExemplaire;
+        HashSet<Adherent> liste;
+        Pret pret;
+
         public FormPret()
         {
             InitializeComponent();
@@ -36,10 +41,9 @@ namespace GestionPretForm
             adherent = AdherentDAO.Instance.GetByID(adherentComboBox.Text);
             HashSet<Pret> listePret = new HashSet<Pret>();
             try
-            {
-                adherent.Prets.SymmetricExceptWith(PretDAO.Instance.GetListePretsEncoursByIdAdherent(adherent.AdherentID));
-                listePret = adherent.Prets;
-                pretBindingSource.DataSource = listePret;
+            { 
+                listePret = PretDAO.Instance.GetListePretsEncoursByIdAdherent(adherent.AdherentID);
+                pretBindingSource1.DataSource = listePret;
             }
             catch(Exception)
             {
@@ -56,7 +60,6 @@ namespace GestionPretForm
                 IdExemplaire = int.Parse(exemplaireComboBox.Text),
                 DateEmprunt = DateTime.Today
             };
-
             Adherent adherent = new Adherent();
             adherent = AdherentDAO.Instance.GetByID(adherentComboBox.Text);
             adherent.Prets.SymmetricExceptWith(PretDAO.Instance.GetListePretsEncoursByIdAdherent(adherent.AdherentID));
@@ -68,6 +71,7 @@ namespace GestionPretForm
                     {
                         PretDAO.Instance.Create(pret);
                         MessageBox.Show($"Vous avez enregistré un nouveau prêt : Exemplaire n°{exemplaireComboBox.Text} à l'adhérent {adherentComboBox.Text}", "Message", MessageBoxButtons.OK);
+                        pretBindingSource1.Add(pret);
                         disponibleCheckBox.Checked = false;
                     }
                     catch (Exception)
@@ -112,7 +116,6 @@ namespace GestionPretForm
         private void LoadData()
         {
             //Load Datas of Adherent object
-            HashSet<Adherent> liste = new HashSet<Adherent>();
             liste = AdherentDAO.Instance.GetAll();
             adherentBindingSource1.DataSource = liste;
             adherentComboBox.DisplayMember = "AdherentID";
@@ -120,7 +123,6 @@ namespace GestionPretForm
             prenomTextBox1.DataBindings.Add("Text", adherentBindingSource1, "Prenom");
 
             //Load Datas of Exemplaire object
-            HashSet<Exemplaire> listeExemplaire = new HashSet<Exemplaire>();
             listeExemplaire = ExemplaireDAO.Instance.GetAll();
             exemplaireBindingSource1.DataSource = listeExemplaire;
             exemplaireComboBox.DisplayMember = "IdExemplaire";
@@ -129,5 +131,60 @@ namespace GestionPretForm
             disponibleCheckBox.DataBindings.Add("Checked", exemplaireBindingSource1, "Disponible");
         }
 
+        //Check properties of an exemplaire after pressing Enter
+        private void ExemplaireComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (string.IsNullOrEmpty(exemplaireComboBox.Text))
+                {
+                    MessageBox.Show("Veuillez choisir un exemplaire à rechercher", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    try
+                    {
+                        exemplaire = ExemplaireDAO.Instance.GetByID(Convert.ToInt32(exemplaireComboBox.Text));
+                        exemplaireBindingSource1.DataSource = exemplaire;
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Veuillez choisir un exemplaire existant", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        //Update the exemplaire combo box with the one selected in the grid
+        private void PretDataGridView_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                exemplaire = ExemplaireDAO.Instance.GetByID((int)pretDataGridView.SelectedCells[2].Value);
+                exemplaireBindingSource1.DataSource = exemplaire;
+            }
+            catch (Exception)
+            {
+                //reload the list in the exmplaire combo box
+                listeExemplaire = ExemplaireDAO.Instance.GetAll();
+                exemplaireBindingSource1.DataSource = listeExemplaire;
+                return;
+            }
+        }
+
+        //Register the return of a book
+        private void BtnRetour_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = pretDataGridView.CurrentRow;
+            if(row == null)
+            {
+                return;
+            }
+            pret = row.DataBoundItem as Pret;
+            pret.DateRetour = DateTime.Today;
+            PretDAO.Instance.Update(pret);
+            pretBindingSource1.Remove(pret);
+            MessageBox.Show("Retour enregistré avec succès", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
