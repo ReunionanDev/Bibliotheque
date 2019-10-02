@@ -67,6 +67,12 @@
     <Compile Include="FormAdherent.Designer.cs">
       <DependentUpon>FormAdherent.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLivre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLivre.Designer.cs">
+      <DependentUpon>FormLivre.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPret.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAdherent.resx">
       <DependentUpon>FormAdherent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLivre.resx">
+      <DependentUpon>FormLivre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPret.resx">
       <DependentUpon>FormPret.cs</DependentUpon>
@@ -101,6 +110,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\Bibliotheque.BOL.Adherent.datasource" />
+    <None Include="Properties\DataSources\Bibliotheque.BOL.Categorie.datasource" />
     <None Include="Properties\DataSources\Bibliotheque.BOL.Exemplaire.datasource" />
     <None Include="Properties\DataSources\Bibliotheque.BOL.Livre.datasource" />
     <None Include="Properties\DataSources\Bibliotheque.BOL.Pret.datasource" />

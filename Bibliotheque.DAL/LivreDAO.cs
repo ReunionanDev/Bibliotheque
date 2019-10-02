@@ -54,7 +54,7 @@ namespace Bibliotheque.DAL
             using (SqlCommand command = cnx.CreateCommand())
             {
                 command.CommandType = CommandType.Text;
-                command.CommandText = "Select ISBN, Titre FROM dbo.Livre";
+                command.CommandText = "Select ISBN, Titre, IdCategorie FROM dbo.Livre";
                 return AlimenterListe(command);
             }
 
@@ -76,7 +76,8 @@ namespace Bibliotheque.DAL
             Livre livre = new Livre
             {
                 ISBN = rd["ISBN"].ToString(),
-                Titre = rd["Titre"].ToString()             
+                Titre = rd["Titre"].ToString(),  
+                IdCategorie = (int)rd["IdCategorie"]
             };
             return livre;
         }

@@ -28,3 +28,9 @@ C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibl
 C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.dll
 C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.pdb
 C:\Users\Gael RB\Desktop\Bibliotheque-master\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csprojAssemblyReference.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\BibliothequeNCouches\bin\Debug\Bibliotheque.BOL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\BibliothequeNCouches\bin\Debug\Bibliotheque.BOL.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csprojAssemblyReference.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.csproj.CoreCompileInputs.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\BibliothequeNCouches\obj\Debug\Bibliotheque.BOL.pdb

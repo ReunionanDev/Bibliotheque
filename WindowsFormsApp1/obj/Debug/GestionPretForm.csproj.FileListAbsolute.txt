@@ -38,3 +38,24 @@ C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretFor
 C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormAdherent.resources
 C:\Users\Gael RB\Desktop\Bibliotheque-master\WindowsFormsApp1\obj\Debug\GestionPretForm.FormAdherent.resources
 C:\Users\Gael RB\Desktop\Bibliotheque-master\WindowsFormsApp1\obj\Debug\GestionPretForm.MainWindow.resources
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\GestionPretForm.exe.config
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\GestionPretForm.exe
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\GestionPretForm.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.BOL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.ConsoleWindows.exe
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.DAL.dll
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.ConsoleWindows.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.ConsoleWindows.exe.config
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.DAL.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\bin\Debug\Bibliotheque.BOL.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.csprojAssemblyReference.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormAdherent.resources
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormPret.resources
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.MainWindow.resources
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.Properties.Resources.resources
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.csproj.GenerateResource.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.csproj.CoreCompileInputs.cache
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.csproj.CopyComplete
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.exe
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.pdb
+C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormLivre.resources
