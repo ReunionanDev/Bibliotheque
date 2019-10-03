@@ -28,6 +28,19 @@ namespace GestionPretForm
             DB.DbConnectionString = Properties.Settings.Default.BibliothequeConnectString;
         }
 
+        private static FormPret instance;
+
+        public static FormPret GetInstance
+        {
+            get
+            {
+                if (instance == null || instance.IsDisposed)
+                {
+                    instance = new FormPret();
+                }
+                return instance;
+            }
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

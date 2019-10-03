@@ -59,3 +59,5 @@ C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\Gesti
 C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.exe
 C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.pdb
 C:\Users\Gael RB\Documents\Code C#\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormLivre.resources
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormLivre.resources
+C:\Users\CDA\source\repos\Bibliotheque\WindowsFormsApp1\obj\Debug\GestionPretForm.FormModifyBook.resources

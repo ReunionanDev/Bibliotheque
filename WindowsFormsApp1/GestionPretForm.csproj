@@ -73,6 +73,12 @@
     <Compile Include="FormLivre.Designer.cs">
       <DependentUpon>FormLivre.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormModifyBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModifyBook.Designer.cs">
+      <DependentUpon>FormModifyBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPret.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLivre.resx">
       <DependentUpon>FormLivre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModifyBook.resx">
+      <DependentUpon>FormModifyBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPret.resx">
       <DependentUpon>FormPret.cs</DependentUpon>

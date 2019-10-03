@@ -23,6 +23,20 @@ namespace GestionPretForm
             DB.DbConnectionString = Properties.Settings.Default.BibliothequeConnectString;
         }
 
+        private static FormAdherent instance;
+
+        public static FormAdherent GetInstance
+        {
+            get
+            {
+                if (instance == null || instance.IsDisposed)
+                {
+                    instance = new FormAdherent();
+                }
+                return instance;
+            }
+        }
+
         private Adherent FindAdherent(string search)
         {
             foreach (Adherent item in adherents)

@@ -39,7 +39,7 @@ namespace Bibliotheque.DAL
                 pISBN.Value = ISBN;
                 pISBN.Size = 10;
                 command.Parameters.Add(pISBN);
-                command.CommandText = "Select ISBN,Titre FROM dbo.Livre where ISBN = @ISBN";
+                command.CommandText = "Select ISBN,Titre,IdCategorie FROM dbo.Livre where ISBN = @ISBN";
                 using (SqlDataReader rd = command.ExecuteReader())
                 {
                     return rd.Read() ? ChargerDonnees(rd) : null;
@@ -80,6 +80,50 @@ namespace Bibliotheque.DAL
                 IdCategorie = (int)rd["IdCategorie"]
             };
             return livre;
+        }
+        public void Update(Livre livre)
+        {
+            using (SqlConnection cnx = DB.Instance.GetDBConnection())
+            using (SqlCommand command = cnx.CreateCommand())
+            {
+                command.CommandText = "dbo.Livre_Update";
+                command.CommandType = CommandType.StoredProcedure;
+
+                // Ajout des paramètres 
+                SqlParameter parameter;
+                parameter = new SqlParameter();
+                parameter.ParameterName = "@RETURN_VALUE";
+                parameter.SqlDbType = SqlDbType.Int;
+                parameter.Direction = ParameterDirection.ReturnValue;
+                command.Parameters.Add(parameter);
+                parameter = new SqlParameter();
+                parameter.ParameterName = "@ISBN";
+                parameter.SqlDbType = SqlDbType.NChar;
+                parameter.Direction = ParameterDirection.Input;
+                parameter.Size = 10;
+                command.Parameters.Add(parameter);
+                parameter = new SqlParameter();
+                parameter.ParameterName = "@Titre";
+                parameter.SqlDbType = SqlDbType.NVarChar;
+                parameter.Direction = ParameterDirection.Input;
+                parameter.Size = 150;
+                command.Parameters.Add(parameter);
+                parameter = new SqlParameter();
+                parameter.ParameterName = "@IdCategorie";
+                parameter.SqlDbType = SqlDbType.Int;
+                parameter.Direction = ParameterDirection.Input;
+                parameter.Size = 50;
+                command.Parameters.Add(parameter);
+                // Passage des valeurs
+                command.Parameters["@ISBN"].Value = livre.ISBN;
+                command.Parameters["@Titre"].Value = livre.Titre;
+                command.Parameters["@IdCategorie"].Value = livre.IdCategorie;
+
+                if (command.ExecuteNonQuery() == 0)
+                {
+                    throw new Exception(Messages.UpdateNonTraite);
+                }
+            }
         }
     }
 }

@@ -33,6 +33,7 @@
             this.outilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesPrêtsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesAdherentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionDesLivresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,8 @@
             // 
             this.outilsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionDesPrêtsToolStripMenuItem1,
-            this.gestionDesAdherentsToolStripMenuItem});
+            this.gestionDesAdherentsToolStripMenuItem,
+            this.gestionDesLivresToolStripMenuItem});
             this.outilsToolStripMenuItem.Name = "outilsToolStripMenuItem";
             this.outilsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.outilsToolStripMenuItem.Text = "Outils";
@@ -75,6 +77,13 @@
             this.gestionDesAdherentsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.gestionDesAdherentsToolStripMenuItem.Text = "Gestion des adherents";
             this.gestionDesAdherentsToolStripMenuItem.Click += new System.EventHandler(this.GestionDesAdherentsToolStripMenuItem_Click);
+            // 
+            // gestionDesLivresToolStripMenuItem
+            // 
+            this.gestionDesLivresToolStripMenuItem.Name = "gestionDesLivresToolStripMenuItem";
+            this.gestionDesLivresToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.gestionDesLivresToolStripMenuItem.Text = "Gestion des livres";
+            this.gestionDesLivresToolStripMenuItem.Click += new System.EventHandler(this.GestionDesLivresToolStripMenuItem_Click);
             // 
             // MainWindow
             // 
@@ -101,5 +110,6 @@
         private System.Windows.Forms.ToolStripMenuItem outilsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDesPrêtsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem gestionDesAdherentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionDesLivresToolStripMenuItem;
     }
 }

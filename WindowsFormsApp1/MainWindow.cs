@@ -21,14 +21,21 @@ namespace GestionPretForm
         {
             FormPret newMDIChild = new FormPret();
             newMDIChild.MdiParent = this;
-            newMDIChild.Show();
+            FormPret.GetInstance.Show();
         }
 
         private void GestionDesAdherentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormAdherent newMDIChild = new FormAdherent();
             newMDIChild.MdiParent = this;
-            newMDIChild.Show();
+            FormAdherent.GetInstance.Show();
+        }
+
+        private void GestionDesLivresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLivre newMDIChild = new FormLivre();
+            newMDIChild.MdiParent = this;
+            FormLivre.GetInstance.Show();
         }
     }
 }

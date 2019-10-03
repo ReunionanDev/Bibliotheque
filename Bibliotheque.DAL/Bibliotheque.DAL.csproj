@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdherentDAO.cs" />
+    <Compile Include="CategorieDAO.cs" />
     <Compile Include="DbConnection.cs" />
     <Compile Include="ExemplaireDAO.cs" />
     <Compile Include="LivreDAO.cs" />

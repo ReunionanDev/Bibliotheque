@@ -68,13 +68,38 @@ namespace Bibliotheque.BOL
             return (AdherentID != null) ? AdherentID.GetHashCode() : 0;
         }
     }
-    public class Livre
+    public class Livre : INotifyPropertyChanged
     {
+        private string _titre;
         public string ISBN { get; set; }
-        public string Titre { get; set; }
-        public int IdCategorie { get; set; }
+        public string Titre
+        {
+            get
+            {
+                return this._titre;
+            }
+            set
+            {
+                if(value != this._titre)
+                {
+                    this._titre = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public int? IdCategorie { get; set; }
         public Categorie Categorie { get; set; }
         public HashSet<Exemplaire> Exemplaires { get; } = new HashSet<Exemplaire>();
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged([CallerMemberName]String propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
         /// <summary>
         /// Compare deux instances pour déterminer l'égalité
         /// </summary>
