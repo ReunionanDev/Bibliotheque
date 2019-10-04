@@ -87,6 +87,7 @@ namespace GestionPretForm
             {
                 livre = LivreDAO.Instance.GetByISBN(this.iSBNTextBox.Text);
                 FormModifyBook form = new FormModifyBook();
+                form.libelleComboBox.Enabled = false;
                 form.titreTextBox.Text = this.titreTextBox.Text;
                 form.idCategorieTextBox.Text = this.idCategorieTextBox.Text;
                 if (form.ShowDialog(this) == DialogResult.OK)
@@ -103,7 +104,16 @@ namespace GestionPretForm
 
         private void BtnAjouterLivre_Click(object sender, EventArgs e)
         {
-
+            FormModifyBook form = new FormModifyBook();
+            if (form.ShowDialog(this) == DialogResult.OK)
+            {
+                livre = new Livre();
+                livre.ISBN = form.iSBNTextBox.Text;
+                livre.Titre = form.titreTextBox.Text;
+                livre.IdCategorie = int.Parse(form.idCategorieTextBox.Text);
+                //LivreDAO.Instance.Create(livre);
+                livreBindingSource.DataSource = livre;
+            }
         }
     }
 }

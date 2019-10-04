@@ -46,6 +46,7 @@
             this.btnAjouterLivre = new System.Windows.Forms.Button();
             this.categorieBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.adherentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnAjouterExemplaire = new System.Windows.Forms.Button();
             titreLabel = new System.Windows.Forms.Label();
             iSBNLabel = new System.Windows.Forms.Label();
             idCategorieLabel = new System.Windows.Forms.Label();
@@ -186,11 +187,21 @@
             // 
             this.adherentBindingSource.DataSource = typeof(Bibliotheque.BOL.Adherent);
             // 
+            // btnAjouterExemplaire
+            // 
+            this.btnAjouterExemplaire.Location = new System.Drawing.Point(384, 113);
+            this.btnAjouterExemplaire.Name = "btnAjouterExemplaire";
+            this.btnAjouterExemplaire.Size = new System.Drawing.Size(153, 23);
+            this.btnAjouterExemplaire.TabIndex = 9;
+            this.btnAjouterExemplaire.Text = "Ajouter exemplaire";
+            this.btnAjouterExemplaire.UseVisualStyleBackColor = true;
+            // 
             // FormLivre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 540);
+            this.Controls.Add(this.btnAjouterExemplaire);
             this.Controls.Add(this.btnAjouterLivre);
             this.Controls.Add(idCategorieLabel);
             this.Controls.Add(this.idCategorieTextBox);
@@ -229,5 +240,6 @@
         private System.Windows.Forms.Button btnAjouterLivre;
         private System.Windows.Forms.BindingSource categorieBindingSource;
         private System.Windows.Forms.BindingSource adherentBindingSource;
+        private System.Windows.Forms.Button btnAjouterExemplaire;
     }
 }
